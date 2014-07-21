@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteBase /protex_co_th/art-dev/
+
+RewriteCond $1 !^(index\.php|ajax\.php|ajaxfw\.php|images|css|js|robots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
+#RewriteRule ^(.*)$ ajax.php/$1 [L]
