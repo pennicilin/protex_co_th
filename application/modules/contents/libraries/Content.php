@@ -231,7 +231,11 @@ class Content
 					// $result .= "<style>.line-art{ margin: 0 0 0 100px; }</style>";
 					$result .= "<h2>".$latest_article->title."</h2>";
 
-					$img = '';
+					$result .= '<div class="fb-likebox">
+					<div class="fb-like" data-href="" data-width="300" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+				</div>';
+
+					$img = ''; $image_propery['src'] = "";
 
 					if($latest_article->image_name != '' || $latest_article->image_name != NULL){
 
@@ -239,7 +243,8 @@ class Content
 
 							'src' => 'images/article/'.$latest_article->image_name,
 							'align' => 'left',
-							'style' => "margin-right: 20px; margin-top: 15px;"
+							'style' => "margin-right: 20px; margin-top: 15px;",
+							// 'rel' => 'image_src'
 
 						);
 
@@ -251,6 +256,15 @@ class Content
 					// echo $result; exit();
 
 					// $result .=   $img."<p>" . $result . "</p>";
+					// 
+
+					$result .= '<script>
+								var meta = document.createElement("meta");
+								// var head = document.createElement("head");
+								meta.setAttribute("thumbnail", "'. base_url().$image_propery['src'] . '");
+								$("head").append(meta);
+								
+							</script>';
 
 				}else{
 

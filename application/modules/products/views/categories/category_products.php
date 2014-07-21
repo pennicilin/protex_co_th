@@ -25,7 +25,10 @@ products/'.$model->product_section_uri.'/'.$model->uri . '/' . $item->uri
 				</style>
 
 				<h2 style="text-align:left;">รายละเอียดผลิตภัณฑ์</h2>
-
+				
+				<div class="fb-likebox">
+					<div class="fb-like" data-href="" data-width="300" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+				</div>
 
 				<!-- <div class="dock" id="dock2">
 				  <div class="dock-container2">

@@ -100,7 +100,7 @@ ul li.has-sub ul.sub li{
 
 ul li.has-sub ul.sub a{
 
-  background: url("../images/arrow.jpg") no-repeat scroll 0 6px transparent;margin: 0;    padding: 0 0 0 25px !important;
+  background: url("../images/arrow-men-2.png") no-repeat scroll 0 6px transparent;margin: 0;    padding: 0 0 0 25px !important;
   color: #333 !important;
 }
 
@@ -262,10 +262,10 @@ ul.crumb li{float:left; font-size: 13px;}
     float: left;
     width: 140px;
 }
-#family .text-article {    float: left;  margin-left:20px;  width: 265px;}
+#family .text-article {    float: left; padding: 5px 20px;  margin-left:20px;  width: 265px;}
 #family .text-article p{color:#999999;  line-height: 17px;}
 #family .text-article h2{  font-family: psl_display_probold;    font-size: 25px;    color: #003A9B;}
-.family-bar #sub-family a{ background: url("../images/arrow.jpg") no-repeat scroll 0 6px transparent; font-family: psl_display_proregular;color:#3b67b0;    margin: 0;    padding: 0 0 0 25px !important;}
+.family-bar #sub-family a{ background: url("../images/arrow-men-2.png") no-repeat scroll 0 6px transparent; font-family: psl_display_proregular;color:#3b67b0;    margin: 0;    padding: 0 0 0 25px !important;}
 .family-bar #sub-men a{ background: url("../images/arrow-men.png") no-repeat scroll 0 6px transparent; font-family: psl_display_proregular;color:#FFF !important;    margin: 0;    padding: 0 0 0 25px !important;}
 .family-bar {left: 205px;top: 65px;}
 #article-menu ul{
@@ -281,7 +281,7 @@ border: medium none;
     width: 220px !important;
 }
 #article-menu ul li{float:left;clear:both; margin-top: 10px;}
-#article-menu li a{ background: url("../images/arrow.jpg") no-repeat scroll 0 6px transparent; font-family: psl_display_proregular;color:#3b67b0;    margin: 0;    padding: 0 0 0 25px !important;}
+#article-menu li a{ background: url("../images/arrow-men-2.png") no-repeat scroll 0 6px transparent; font-family: psl_display_proregular;color:#3b67b0;    margin: 0;    padding: 0 0 0 25px !important;}
 .btn-more {
     background: url("../images/btn_more.jpg") no-repeat scroll 0 0 transparent;
     cursor: pointer;
@@ -373,21 +373,21 @@ background: url("../images/line-bg.png") no-repeat scroll 0 0 transparent;
     width: 476px;
   } */
 
-#men #right-panel ul li{ 
+/* #men #right-panel ul li, #family #right-panel ul li{ 
 
-   /*border-bottom: 1px solid #EEEEEE;*/
+   border-bottom: 1px solid #EEEEEE;
     clear: both;
     float: left;
     padding: 10px 0;
     width: 476px;
-  }
+  } */
 
 #activity #right-panel ul li{ width: 410px !important;padding:0px !important;  }
-#activity #right-panel ul li a{background:url("../images/arrow-art.jpg") no-repeat scroll 0 6px transparent !important; width: 272px !important;margin:20px  0!important;padding-left:21px !important;   float: left;}
+#activity #right-panel ul li a{background:url("../images/arrow-art.png") no-repeat scroll 0 6px transparent !important; width: 272px !important;margin:20px  0!important;padding-left:21px !important;   float: left;}
 
-#family #activity-main #right-panel ul li a, #right-panel ul li a{font-family: psl_display_proregular;   font-size: 24px; color:#555555; background: url("../images/arrow-art.jpg") no-repeat scroll 0 6px transparent !important; text-decoration: none; padding-left: 21px !important;}
-#men #activity-main #right-panel ul li a, #men #right-panel ul li a{font-family: psl_display_proregular;   font-size: 24px; color:#FFF; background: url("../images/arrow-art.jpg") no-repeat scroll 0 6px transparent !important;      padding-left: 21px !important; text-decoration: none;}
-#family #container #right-panel ul li a.men, #men #container #right-panel ul li a.men{font-family: psl_display_proregular;   font-size: 24px; background: url("../images/arrow.jpg") no-repeat scroll 0 6px transparent !important;      padding-left: 21px !important; text-decoration: none;}
+#family #activity-main #right-panel ul li a, #right-panel ul li a{font-family: psl_display_proregular;   font-size: 24px; color:#555555; background: url("../images/arrow-art.png") no-repeat scroll 0 6px transparent !important; text-decoration: none; padding-left: 21px !important;}
+#men #activity-main #right-panel ul li a, #men #right-panel ul li a{font-family: psl_display_proregular;   font-size: 24px; color:#FFF; background: url("../images/arrow-art.png") no-repeat scroll 0 6px transparent !important;      padding-left: 21px !important; text-decoration: none;}
+#family #container #right-panel ul li a.men, #men #container #right-panel ul li a.men{font-family: psl_display_proregular;   font-size: 24px; background: url("../images/arrow-men-2.png") no-repeat scroll 0 6px transparent !important;      padding-left: 21px !important; text-decoration: none;}
 
 
 #activity-main{    margin: 20px auto;    width: 1170px;}
@@ -397,6 +397,15 @@ background: url("../images/line-bg.png") no-repeat scroll 0 0 transparent;
 }
 
 /* product tooltip */
+#men #right-panel ul li, #family #right-panel ul li{ 
+
+   /*border-bottom: 1px solid #EEEEEE;*/
+    clear: both;
+    float: left;
+    padding: 10px 0;
+    width: 476px;
+  }
+
 .producttooltip,
 .dock-item2 > span {
   -webkit-box-shadow: 2px 2px 7px #999;
@@ -508,4 +517,11 @@ a.dock-item2:after {
 
 a.dock-item2:hover:after{
   border-color:#1d96d3;
+}
+
+
+.fb-likebox{
+
+  margin-bottom: 10px;
+  text-align: right;
 }

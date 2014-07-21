@@ -20,14 +20,22 @@
 			</div>
 			<div class="social">
             <a href="#">
+<!-- https://www.facebook.com/ProtexThailand -->
+            	<?php echo anchor(
 
-            	<?php echo img(array(
+                        'https://www.facebook.com/ProtexThailand',
 
-            		'src'=>'images/footer.jpg',
-            		'width'=>'233',
-            		'height'=>'49'
+                        img(array(
 
-            	)); ?>
+                            'src'=>'images/footer.jpg',
+                            'width'=>'233',
+                            'height'=>'49'
+
+                        )),
+
+                        array('target' => '_blank')
+
+                    );?>
             	<!-- <img src="images/footer.jpg" width="233" height="49"></a> -->
 
 
@@ -35,3 +43,11 @@
 		</div>
 		</div>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&appId=202609959891767&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

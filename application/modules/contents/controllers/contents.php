@@ -73,8 +73,18 @@ class Contents extends CI_Controller {
 			// print_r(array('model' => $model, 'breadcrumb' => $breadcrumb)); exit();
 
 			// $model = $this->read('Article', $uri);
+			$data = array(
 
-			$this->display('template2', array('model'=> $model, 'breadcrumb'=> $breadcrumb, 'article_header'=> $model->title));
+			'model'=> $model,
+
+			 'breadcrumb'=> $breadcrumb,
+
+			  'article_header'=> $model->title
+
+			  );
+
+
+			$this->display('template2', $data );
 
 		}else{
 
