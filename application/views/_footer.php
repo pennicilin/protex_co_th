@@ -20,7 +20,7 @@
 			</div>
 			<div class="social">
             <a href="#">
-<!-- https://www.facebook.com/ProtexThailand -->
+
             	<?php echo anchor(
 
                         'https://www.facebook.com/ProtexThailand',
