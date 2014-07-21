@@ -1,3 +1,16 @@
+<?php 
+    
+    if($this->uri->segment(1) == 'products'){
+?>
+<style>
+   #footer{
+
+         margin-top: 70px;
+   }
+</style>
+<?php
+    }
+?>
 <div id="footer">
 		<div class="footer-detail">
 			<div class="copyright">© 2011 Copyright Colgate Palmolive Co.,Ltd All Right Reserved. 

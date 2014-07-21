@@ -109,30 +109,30 @@ class Product
 				if($section->product_category->publish()->get()->result_count() > 0){
 					
 
-						$result .= "<ul>";
+						$result .= "<ul style='margin: 0px 0px 100px; background: url(../../images/right_product_list_bg2.jpg) no-repeat scroll 0px 0px transparent;'>";
 						
 						$list_item = "";
 
-
+						array('test'=>'test','test'=>'test');
 						// echo $this->folder;
 
-						foreach($section->product_category->publish()->get() as $category){
-								
-							$category_uri = $category->uri;
+					foreach($section->product_category->publish()->get() as $category){
+							
+						$category_uri = $category->uri;
 
-							if($this->default_list_item){
+						if($this->default_list_item){
 
-								$list_item = $category->name;
+							$list_item = $category->name;
 
-							}elseif($this->list_format == "thumb"){
+						}elseif($this->list_format == "thumb"){
 
-								$list_item = img($this->folder .'/'. $category->thumb_name);
-							}
-
-							$result .= '<li><a class="'.$a_class.'" href="'.base_url().'products/'.$section_uri.'/'.$category_uri.'">'.$list_item.'</a></li>';
-
-
+							$list_item = img($this->folder .'/'. $category->thumb_name);
 						}
+
+						$result .= '<li><a class="'.$a_class.'" href="'.base_url().'products/'.$section_uri.'/'.$category_uri.'">'.$list_item.'</a></li>';
+
+
+					}
 
 						$result .= "</ul>";
 

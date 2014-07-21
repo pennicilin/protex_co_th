@@ -105,9 +105,24 @@ products/'.$model->product_section_uri.'/'.$model->uri . '/' . $item->uri
 							    //var _id = $(this).find("a").attr("rel");
 							    var _id = $(this).attr("rel");
 							    var _data = keepdata[_id];
-							    var _html = "<p>"+_data['category_name']+"</p><p style='color: #1D96D3;'>"+_data['name']+"</p><p style='margin-top: 30px;'><img width='100' align='left' vspace='45' hspace='45' style='margin-right: 30px;'' src='../../images/products/"+_data['section']
+							    var _html = "<h2 style='text-align:left;'>"
+							    +_data['category_name']+"</h2><p style='color: #088A4B;'>"+_data['name']
+
+							    +"</p><p style='margin-top: 30px;'><img width='100' align='left' vspace='45' hspace='45' style='margin-right: 30px;'' src='../../images/products/"
+
+							    +_data['section']
+
 							    +'/'+_data['category'] + '/'
-							    +_data['image_name']+"'>"+_data['desc']+"</p>";
+
+							    +_data['image_name']+"'>"+_data['desc']+"</p>"
+
+							    +"<p style='text-align: right;'>"
+
+							    +"<a href='<?php echo base_url()?>contents/health/<?php echo $this->uri->segment(2)?>'>"
+							    +"<img src='../../images/related_article_button.gif' />"
+							    +"</a>"
+
+							    +"</p>";
 							    // $('.desc').html(_data['desc']);
 							    // 
 							    $('.desc').html(_html);

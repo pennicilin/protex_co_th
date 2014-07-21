@@ -5,7 +5,16 @@
 	if($this->uri->segment(1) == 'contents'){
 
 		// exit();
-		if($model->section->get()->uri == 'health'){
+		// 
+		if($model == 'Category'){
+
+
+		}
+
+		// $model->section->get()->uri
+
+
+		if($this->uri->segment(2) == 'health'){
 
 			// exit();
 			$class_prefix = "article";
@@ -41,7 +50,7 @@
 				// echo $model;
 					if($this->uri->segment(1) == 'contents'){
 
-						
+
 						if($model == "Section"){
 
 
