@@ -5,7 +5,7 @@
 <style>
    #footer{
 
-         margin-top: 70px;
+         /*margin-top: 70px;*/
    }
 </style>
 <?php

@@ -104,16 +104,26 @@ class Product
 					$a_class = "men";
 				}
 				
-				$result .= "<h2 ".$style.">ผลิตภัณฑ์ ". $section->name ."</h2>";
+				if($section->uri == 'family'){
+
+					$suffix = 'family';
+				}elseif($section->uri == 'men'){
+
+					$suffix = 'men';
+				}
+
+
+				$result .= "<h2 ".$style."><a href='".base_url()."products/".$section->uri."' class='product ".$suffix."'>ผลิตภัณฑ์ ". $section->name ."</a></h2>";
 
 				if($section->product_category->publish()->get()->result_count() > 0){
-					
 
-						$result .= "<ul style='margin: 0px 0px 100px; background: url(../../images/right_product_list_bg2.jpg) no-repeat scroll 0px 0px transparent;'>";
+						
+						
+						$result .= "<ul class='product-right-col ".$suffix."'>";
 						
 						$list_item = "";
 
-						array('test'=>'test','test'=>'test');
+						// array('test'=>'test','test'=>'test');
 						// echo $this->folder;
 
 					foreach($section->product_category->publish()->get() as $category){
@@ -137,6 +147,7 @@ class Product
 						$result .= "</ul>";
 
 
+
 				}else{
 
 					$result .= $this->no_article_message;
@@ -145,7 +156,7 @@ class Product
 
 			}
 
-
+			$result .= "<div style='margin-top: -10px;'><img src='".base_url()."images/product-bottom-banner.png' /></div>";
 			$result .= "</div>";
 
 			

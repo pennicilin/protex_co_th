@@ -166,8 +166,8 @@ ul li.has-sub ul.sub a{
     border-top: 3px solid #EFEFEF;
     clear: both;
     float: left;
-
-    padding-top: 45px;
+    margin-top: 0;
+    padding-top: 15px;
     width: 100%;
 background: none repeat scroll 0 0 #FFFFFF;
 }
@@ -382,8 +382,8 @@ padding: 10px 0;
 width: 476px;
 } */
 
-#activity #right-panel ul li{ width: 410px !important;padding:0px !important; }
-#activity #right-panel ul li a{background:url("../images/arrow-art.png") no-repeat scroll 0 6px transparent !important; width: 272px !important;margin:20px 0!important;padding-left:21px !important; float: left;}
+#activity #right-panel ul li{ width: 410px !important;padding:10px 0 !important; }
+#activity #right-panel ul li a{background:url("../images/arrow-art.png") no-repeat scroll 0 6px transparent !important; width: 272px !important;margin:0 !important;padding-left:21px !important; float: left;}
 
 #family #activity-main #right-panel ul li a, #right-panel ul li a{font-family: psl_display_proregular; font-size: 24px; color:#555555; background: url("../images/arrow-art.png") no-repeat scroll 0 6px transparent !important; text-decoration: none; padding-left: 21px !important;}
 #men #activity-main #right-panel ul li a, #men #right-panel ul li a{font-family: psl_display_proregular; font-size: 24px; color:#FFF; background: url("../images/arrow-product-men.png") no-repeat scroll 0 6px transparent !important; padding-left: 21px !important; text-decoration: none;}
@@ -555,3 +555,56 @@ a.tooltip{
   margin-bottom: 10px;
   text-align: right;
 }
+
+#men #right-panel ul.product-right-col ,#family #right-panel ul.product-right-col{
+    /*margin: 0 0 100px;*/
+    min-height: 200px;
+    width: 300px;
+}
+
+#men #right-panel ul.product-right-col li, #family #right-panel ul.product-right-col li {
+    /*margin: 0 0 100px;*/
+   padding: 5px 0;
+}
+
+#men #right-panel ul.product-right-col.family{
+
+   background: url("../images/product-men-family-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+#men #right-panel ul.product-right-col.men{
+
+   background: url("../images/product-men-men-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+#family #right-panel ul.product-right-col.family{
+
+   background: url("../images/product-family-family-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+#family #right-panel ul.product-right-col.men{
+
+   background: url("../images/product-family-men-bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+}
+
+h2 a.product{
+
+  text-decoration: none;
+}
+
+h2 a.product.family{
+
+  /*text-decoration: none;*/
+  color: #1d96d3;
+}
+
+h2 a.product.men{
+
+  /*text-decoration: none;*/
+  color: #003a9b;
+}
+
