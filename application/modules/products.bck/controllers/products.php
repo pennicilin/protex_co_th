@@ -90,18 +90,8 @@ class Products extends CI_Controller {
 
 		}
 
-		// echo $model; exit();
-		// Set Header
-		if($model == 'Product_category'){
-
-			$article_header = $model->product_section->get()->name;
-		}elseif($model == 'Product_section'){
-
-			$article_header = $model->name;
-		}
-
-
-		$this->display('template2', array('model'=> $model, 'breadcrumb'=> $breadcrumb, 'article_header'=> $article_header)); 
+		
+		$this->display('template2', array('model'=> $model, 'breadcrumb'=> $breadcrumb, 'article_header'=> $model->name));
 
 	}
 
@@ -121,10 +111,10 @@ class Products extends CI_Controller {
 					'breadcrumb' => $params['breadcrumb'],
 
 					'article_header' => $params['article_header'],
-/*
+
 					'library_src' => $this->javascript->external(),
 
-					'script_head' => $this->javascript->compile()*/
+					'script_head' => $this->javascript->compile()
 
 				));
 

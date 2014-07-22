@@ -169,25 +169,13 @@ products/'.$model->product_section_uri.'/'.$model->uri . '/' . $item->uri
 				   halign : 'center'
 			   }
 		   )
-		   var _max = $(".dock-item2").length;
-		   for(var i = 0 ; i < _max ; ++i){
-		   	var _li_a = $("<li><a hre=''></a></li>");
-		   	$("#itemnumber").append(_li_a);
-		   }
-
-		   $('#dock2').on("mouseover", ".dock-item2", function(e){
-		   	var _index = $(this).index();
-		   	$("#itemnumber .active").removeClass('active');
-		   	$("#itemnumber li").eq(_index).addClass("active");
-		   });
-
 	   }
    );
 </script>
 				
 				</div>
 				</div>
-				<ul class="itemnumber" id="itemnumber"></ul>
+				
 				<div class="desc" style="padding-bottom:100px;"></div>
 				
 				

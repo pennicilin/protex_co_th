@@ -4,6 +4,8 @@ $anchor = "";
 
 
 // echo "test";
+
+
 echo '<div class="header-article">
 						<div class="health-head">'.$model->section->get()->name.'</div><a class="btn-more" href="'.base_url().'contents/health/'.$this->uri->segment(2).'" >อ่านต่อ</a>
 				</div>

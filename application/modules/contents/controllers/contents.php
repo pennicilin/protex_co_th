@@ -54,13 +54,15 @@ class Contents extends CI_Controller {
 
 			
 
-			$model = $this->read('Category', $uri);
+			$model = $this->read('Category', $uri);   
 
 			/*header('content-type: text/plain;');
 			var_dump($model); exit();*/
 			$breadcrumb = $this->get_breadcrumb($model);
 
-			$this->display('template2', array('model'=> $model, 'breadcrumb'=> $breadcrumb, 'article_header'=> $model->name));
+			
+
+			$this->display('template2', array('model'=> $model, 'breadcrumb'=> $breadcrumb, 'article_header'=> $model->name)); 
 
 		}elseif($this->is_article_uri($uri)){
 
@@ -79,7 +81,7 @@ class Contents extends CI_Controller {
 
 			 'breadcrumb'=> $breadcrumb,
 
-			  'article_header'=> $model->title
+			  'article_header'=> $model->category->get()->name
 
 			  );
 
